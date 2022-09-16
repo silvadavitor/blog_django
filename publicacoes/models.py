@@ -10,10 +10,10 @@ class Categoria(models.Model):
 
 
 class Publicacao(models.Model):
-    titulo = models.CharField(max_length=100)
-    descricao_curta = models.TextField(max_length=200, blank=True)
-    autor = models.CharField(max_length=100)
-    conteudo = models.TextField(max_length=500)
+    titulo = models.CharField(max_length=1000)
+    descricao_curta = models.TextField(max_length=5000, blank=True)
+    autor = models.CharField(max_length=500)
+    conteudo = models.TextField(max_length=10000)
     # imagem = models.ImageField()
     data_cadastro = models.DateTimeField(default=timezone.now)
     categorias = models.ForeignKey(Categoria, on_delete=models.DO_NOTHING)

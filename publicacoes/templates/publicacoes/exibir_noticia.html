@@ -2,11 +2,57 @@
 <html lang="en">
 <head>
     <title>Noticias</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <style>
+      .main-header {
+    text-align: center;
+    }
+    .img{
+    width: 2000px;
+    height: 600px;
+}
+
+        body{
+        text-align: justify;
+        }
+
+        p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin-top: 40px;
+        margin-bottom: 70px;
+        margin-right: 500px;
+        margin-left: 500px;}
+
+    h1{
+    text-align: center;
+     font-size: 50px;
+    color: black;
+     margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right: 500px;
+    margin-left: 500px;}
+
+    h4{
+    font-style: italic;
+    margin-bottom: 30px;
+    margin-right: 500px;
+    margin-left: 500px;}
+    </style>
+
 </head>
 <body>
+
+<div class="main-header">
+  <img class="img" src="https://cdn.meutimao.com.br/_upload/wallpapers/neo_quimica_arena-wallpaper_em_4k_ds_3840x2160.jpg" />
+</div>
+<div><hr>
 <h1>{{noticia.titulo}}</h1>
 <br><p>{{noticia.conteudo}}</p>
-<br><h3>{{noticia.autor}}</h3>
+<br><h4>{{noticia.autor}}</h4>    <hr>
 
+</div>
 </body>
 </html>
